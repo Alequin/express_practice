@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha client/src/models/specs",
     "start": "nodemon server",
+    "bundle": "webpack -w",
     "webpack": "cd client && webpack -w"
   },
   "author": "",
