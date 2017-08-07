@@ -5,8 +5,8 @@ var films = require('../client/src/models/films')();
 var Film = require('../client/src/models/film');
 var Review = require('../client/src/models/review');
 
-filmRouter.get('/film', function (req, res) {
-
+filmRouter.get('/films', function (req, res) {
+  res.json(films);
 });
 
 module.exports = filmRouter;
