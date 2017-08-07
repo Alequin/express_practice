@@ -9,4 +9,17 @@ filmRouter.get('/films', function (req, res) {
   res.json(films);
 });
 
+filmRouter.get('/films/:id', function (req, res) {
+  res.json(films[req.params.id]);
+});
+
+filmRouter.get('/films/:id', function (req, res) {
+  res.json(films[req.params.id]);
+});
+
+filmRouter.post('/films', function(req, res){
+  films.push(req.body.film);
+  res.json(films);
+});
+
 module.exports = filmRouter;
