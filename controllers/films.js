@@ -22,4 +22,9 @@ filmRouter.post('/films', function(req, res){
   res.json(films);
 });
 
+filmRouter.put('/films/:id', function(req, res){
+  films[req.params.id] = req.body.film;
+  res.json(films);
+});
+
 module.exports = filmRouter;
